@@ -93,7 +93,7 @@ public class EspetaculosControllerTest {
 
 		when(agenda.sessao(1234l)).thenReturn(sessao);
 
-		controller.reserva(1234l, 5);
+		controller.reserva(1234l, 3);
 
 		verifyZeroInteractions(result);
 	}
