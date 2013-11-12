@@ -58,4 +58,12 @@ public class SessaoTest {
 		
 		Assert.assertEquals(5, sessao.getIngressosDisponiveis().intValue());
 	}
+	
+	@Test
+	public void naoDeveVenderQuantidadeDeIngressosZero() throws Exception {
+		Sessao sessao = new Sessao();
+		sessao.setTotalIngressos(2);
+
+		Assert.assertFalse(sessao.podeReservar(0));
+	}
 }
