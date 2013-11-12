@@ -104,7 +104,7 @@ public class Sessao {
 
 	public boolean podeReservar(Integer numeroDeIngressos) {
 		int sobraram = getIngressosDisponiveis() - numeroDeIngressos;
-        boolean temEspaco = sobraram > 0;
+        boolean temEspaco = sobraram >= 0;
 
         return temEspaco;
 	}

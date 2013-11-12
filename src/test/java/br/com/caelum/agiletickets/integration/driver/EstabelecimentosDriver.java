@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 
 public class EstabelecimentosDriver {
 
-	private static final String BASE_URL = "http://localhost:8080";
+	private static final String BASE_URL = "http://127.0.0.1:8080";
 	private final WebDriver driver;
 
 	public EstabelecimentosDriver(WebDriver driver) {
