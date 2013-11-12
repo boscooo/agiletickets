@@ -66,4 +66,13 @@ public class SessaoTest {
 
 		Assert.assertFalse(sessao.podeReservar(0));
 	}
+	
+	@Test
+	public void naoPodeReservarMenorQueZero() throws Exception {
+		Sessao sessao = new Sessao();
+		sessao.setTotalIngressos(2);
+
+		Assert.assertFalse(sessao.podeReservar(-2));
+	}
+	
 }

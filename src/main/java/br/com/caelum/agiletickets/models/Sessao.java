@@ -103,7 +103,7 @@ public class Sessao {
 	}
 
 	public boolean podeReservar(Integer numeroDeIngressos) {
-		if (numeroDeIngressos == 0){
+		if (numeroDeIngressos <= 0){
 			return false;
 		}
 		
