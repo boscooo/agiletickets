@@ -1,7 +1,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <body>
-	<h2>Próximas sessões</h2>
+	<h2>Próximas sessões now</h2>
 	<ul id="sessoes">
 	<c:forEach items="${sessoes}" var="sessao">
 		<li>
